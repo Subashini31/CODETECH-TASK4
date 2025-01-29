@@ -11,7 +11,7 @@ Given a dataset of car sales, we want to maximize the profit by optimizing the n
 
 ---
 
-### **2. Dataset Exploration**
+
 # Dataset Overview
 Let's first load the dataset and explore the data to understand its structure and key features.
 ### Data Columns:
@@ -32,6 +32,15 @@ Let's first load the dataset and explore the data to understand its structure an
 - `Phone`: Customer phone number.
 - `Dealer_Region`: Region of the dealer.
 
+# Linear Programming Model Implementation
+
+The LP problem using the PuLP library. The goal is to maximize profit while considering the constraints.
+
+#### Steps:
+1. **Define Decision Variables**: The number of cars to be sold for each model.
+2. **Set Objective Function**: Maximize the total profit.
+3. **Define Constraints**: Ensure sales don't exceed regional inventory limits.
+
 # Problem Setup
 
 The goal is to maximize the total profit by selecting the optimal number of cars to sell from each model, while adhering to certain constraints.
@@ -39,9 +48,7 @@ The goal is to maximize the total profit by selecting the optimal number of cars
 #### Objective Function:
 We aim to maximize the total profit, which can be calculated as:
 
-\[
-\text{Total Profit} = \sum_{i=1}^{n} (\text{Profit}_i \times \text{Sales Quantity}_i)
-\]
+`Maximize Z = ∑(i,j) Price(i,j) * X(i,j)`
 
 Where:
 - `Profit_i` is the profit for car model \(i\) (calculated as `Price - Cost`).
@@ -53,16 +60,4 @@ Where:
 
 ---
 
-### **4. Linear Programming Implementation**
-
-# Linear Programming Model Implementation
-
-We will now set up the LP problem using the PuLP library. The goal is to maximize profit while considering the constraints.
-
-#### Steps:
-1. **Define Decision Variables**: The number of cars to be sold for each model.
-2. **Set Objective Function**: Maximize the total profit.
-3. **Define Constraints**: Ensure sales don't exceed regional inventory limits.
-
-We'll solve the LP problem and display the optimal solution.
 
