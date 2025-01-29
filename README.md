@@ -12,12 +12,8 @@ Given a dataset of car sales, we want to maximize the profit by optimizing the n
 ---
 
 ### **2. Dataset Exploration**
-
-```markdown
 # Dataset Overview
-
 Let's first load the dataset and explore the data to understand its structure and key features.
-
 ### Data Columns:
 - `Car_id`: Unique identifier for each car sale.
 - `Date`: Date of sale transaction.
@@ -35,9 +31,6 @@ Let's first load the dataset and explore the data to understand its structure an
 - `Body Style`: Type of car (SUV, Hatchback, etc.).
 - `Phone`: Customer phone number.
 - `Dealer_Region`: Region of the dealer.
-
-We will inspect the first few rows of the dataset to understand its structure and decide how to model the problem.
-
 
 # Problem Setup
 
@@ -62,7 +55,6 @@ Where:
 
 ### **4. Linear Programming Implementation**
 
-```markdown
 # Linear Programming Model Implementation
 
 We will now set up the LP problem using the PuLP library. The goal is to maximize profit while considering the constraints.
